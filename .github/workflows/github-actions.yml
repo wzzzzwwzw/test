@@ -14,20 +14,8 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}.".
-      name: Build
-      on:
-        push:
-          branches:
-            - master
-        pull_request:
-          types: [ opened, synchronize, reopened ]
-      jobs:
-        build:
-          name: Build
-          runs-on: ubuntu-latest
-          steps:
-            - uses: actions/checkout@v2
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+       uses: actions/checkout@v2
               with:
                 fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
             - name: Set up JDK 11
