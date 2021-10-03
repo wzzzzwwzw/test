@@ -60,8 +60,6 @@
         <jacoco.version>0.8.5</jacoco.version>
         <!-- OpenAPI -->
         <springdoc-openapi-webflux-ui.version>1.4.6</springdoc-openapi-webflux-ui.version>
-        <sonar.organization>wzzzzwwzw</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
