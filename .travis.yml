@@ -19,4 +19,4 @@ script:
     api_key: $HEROKU
     on:
       branch: master
-    app: iwvg-devops-test
+    app: iwvg-devops-testgit remote add origin <remote_repo_url>
